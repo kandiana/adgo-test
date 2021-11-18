@@ -1,0 +1,60 @@
+.Button {
+  align-self: flex-end;
+  display: block;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 5px 10px;
+  border: 2px solid #aaa;
+  background-color: lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Button:hover {
+  background-color: #aaa;
+  border-color: gray;
+}
+
+.Button:focus {
+  border-color: #333;
+}
+
+.Button_small {
+  min-width: 40px;
+}
+
+.Button_white {
+  background-color: white;
+}
+
+.Button_noBorder,
+.Button_noBorder:hover {
+  border-radius: 0;
+  border-width: 2px;
+  border-color: transparent;
+}
+
+.Button_prev,
+.Button_prev:hover {
+  border-radius: 5px 0 0 5px;
+}
+
+.Button_next,
+.Button_next:hover {
+  border-radius: 0 5px 5px 0;
+}
+
+.Button_disabled,
+.Button_disabled:hover {
+  background-color: white;
+  border-color: transparent;
+  cursor: default;
+}
+
+.Button_pressed,
+.Button_pressed:hover {
+  background-color: lightgray;
+  border-color: transparent;
+  color: black;
+  cursor: default;
+}
